@@ -2,7 +2,7 @@ name: Auto pull request to FF with develop
 on:
   push:
     branches:
-      - main
+      - flutterflow
 jobs:
   ff-develop-auto-pr:
     runs-on: ubuntu-latest
@@ -13,4 +13,4 @@ jobs:
       - name: Create Auto-PR
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: main
+          branch: flutterflow
